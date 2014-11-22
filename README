@@ -1,0 +1,28 @@
+Rendu du TP Projet LIF12 2012-2013
+============================
+
+Roberto MEDINA BONILLA #p1006255
+
+Langage C
+
+Contenu de l'archive
+--------------------
+
+README		      	ce fichier
+Makefile          	cibles  all, client, communication, regex, socket
+src/client.c      	prend en paramètres (optionnels) l'adresse d'un serveur FTP, le numéro de port, un fichier pour lire des commandes, un utilisateur, son mot de passe.
+					contient le main et lit les options: lister, deconnecte, repertoire, recuperer.
+src/communication.c   définit les fonctions pour communiquer et recevoir des données à travers une socket.
+src/regex.c			  définit les fonctions pour traiter des expressions régulières.
+src/socket.c		  définit la fonction pour se connecter avec une socket.
+Pour les trois derniers .c on a leur .h qui sont utilisés dans client.c
+
+bin/test.pl		script de test donné
+
+Commentaires
+------------
+Pour compiler:
+	make
+
+Pour éxécuter le script de test:
+	./bin/test.pl ./bin/client.bin
